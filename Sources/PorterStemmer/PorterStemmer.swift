@@ -35,7 +35,12 @@
 //
 
 import Porter
-import Darwin
+
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin
+#endif
 
 public class PorterStemmer
     {

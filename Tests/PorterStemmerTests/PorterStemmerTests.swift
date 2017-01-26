@@ -6,10 +6,12 @@ class PorterStemmerTests: XCTestCase
     func testBasic()
         {
         let word = "convenience"
-        let stemmer = PorterStemmer()
-        XCTAssertNotNil(stemmer,"stemmer should not be nil")
-        let stemmedWord = stemmer!.stem(word)
-        XCTAssertEqual(stemmedWord,"conveni","stemmed word should be conveni")
+        if let stemmer = PorterStemmer()
+            {
+            XCTAssertNotNil(stemmer,"stemmer should not be nil")
+            let stemmedWord = stemmer.stem(word)
+            XCTAssertEqual(stemmedWord,"conveni","stemmed word should be conveni")
+            }
         }
     
     func testEmptyString()
