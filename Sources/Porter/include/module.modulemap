@@ -1,0 +1,6 @@
+module Porter
+    {
+    header "stemming.h"
+    link "Porter"
+    export *
+    }
