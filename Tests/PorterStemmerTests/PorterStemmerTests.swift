@@ -1,4 +1,6 @@
 import XCTest
+import Foundation
+
 @testable import PorterStemmer
 
 class PorterStemmerTests: XCTestCase
